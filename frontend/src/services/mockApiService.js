@@ -6,7 +6,8 @@ class MockApiService {
       { id: 2, name: 'Marcelo Afonso', email: 'dev.marceloafonso@gmail.com', role: 'Developer' },
       { id: 3, name: 'Marcos Amorim', email: 'Marcos Amorim', role: 'Developer' },
       { id: 4, name: 'Michael Schumacher', email: 'aih.shcumacher@gmail.com', role: 'Manager' },
-      { id: 5, name: 'Fernando Alonso', email: 'fernando.alonso@gmail.com', role: 'Driver' }
+      { id: 5, name: 'Fernando Alonso', email: 'fernando.alonso@gmail.com', role: 'Driver' },
+      { id: 6, name: 'Ayrton senna', email: 'ayrton.senna@gmail.com', role: 'QA' }
     ];
   }
 

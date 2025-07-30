@@ -25,7 +25,7 @@ winget install Amazon.AWSCLI
 #### Verificar instalação
 ```powershell
 aws --version
-```
+```nom
 
 ### 2. Configuração das Credenciais AWS
 
