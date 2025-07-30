@@ -2,10 +2,11 @@
 class MockApiService {
   constructor() {
     this.users = [
-      { id: 1, name: 'João Silva', email: 'joao@email.com', role: 'Admin' },
-      { id: 2, name: 'Maria Santos', email: 'maria@email.com', role: 'User' },
-      { id: 3, name: 'Pedro Costa', email: 'pedro@email.com', role: 'User' },
-      { id: 4, name: 'Ana Oliveira', email: 'ana@email.com', role: 'Manager' },
+      { id: 1, name: 'Lucas Machado', email: 'dev.lucasalencar@gmail.com', role: 'Developer' },
+      { id: 2, name: 'Marcelo Afonso', email: 'dev.marceloafonso@gmail.com', role: 'Developer' },
+      { id: 3, name: 'Marcos Amorim', email: 'Marcos Amorim', role: 'Developer' },
+      { id: 4, name: 'Michael Schumacher', email: 'aih.shcumacher@gmail.com', role: 'Manager' },
+      { id: 5, name: 'Fernando Alonso', email: 'fernando.alonso@gmail.com', role: 'Driver' }
     ];
   }
 

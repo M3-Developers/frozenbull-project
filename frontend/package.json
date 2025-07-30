@@ -32,7 +32,8 @@
     "deploy:s3:html": "aws s3 sync build/ s3://your-bucket-name --exclude '*' --include '*.html' --cache-control max-age=0,no-cache,no-store,must-revalidate --delete",
     "build:prod": "CI=false npm run build",
     "deploy": "npm run build:prod && npm run deploy:s3 && npm run deploy:s3:html",
-    "deploy:manual": "npm run build:prod && echo 'Build concluído! Agora faça upload manual da pasta build/ para seu bucket S3'"
+    "deploy:manual": "npm run build:prod && echo 'Build concluído! Agora faça upload manual da pasta build/ para seu bucket S3'",
+    "deploy:auto": "powershell -ExecutionPolicy Bypass -File ./deploy-s3.ps1 -BucketName frozenbull-website"
   },
   "eslintConfig": {
     "extends": [
