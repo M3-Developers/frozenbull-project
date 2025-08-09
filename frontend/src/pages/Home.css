@@ -1,10 +1,299 @@
 .home-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  min-height: 100%;
+  min-width: 100%;
 }
 
-.home-header {
+/* --- Slogan ---  */
+
+.slogan-container {
+  height: 44.4444vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.9687vw;
+  background-color: rgba(224, 247, 250, 1);
+
+  img {
+    height: 32.9629vh;
+  }
+
+  h2 {
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+  }
+}
+
+/* --- Percent example --- */
+
+.percentExample-container {
+  height: 32.3148vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 4.3518vh;
+
+  h1 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 66px;
+
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .percent-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.1687vw;
+
+    .percent-content {
+      width: 25.052vw;
+      display: flex;
+
+      p {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        display: flex;
+        align-items: flex-end;
+
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .percent-text {
+        font-family: 'Inter';
+        font-size: 40px;
+        font-weight: 800;
+        color: rgba(176, 190, 197, 1);
+      }
+    }
+  }
+
+  .percentImages-container {
+    display: flex;
+    align-items: center;
+
+    .scrollingNumber-container {
+      min-width: 2.7083vw;
+      width: 2.7083vw;
+      height: 7.5556vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0; /* Prevent shrinking */
+      gap: 0vw;
+
+      img {
+        width: 2.7083vw !important;
+        height: 7.5556vh !important;
+        object-position: center;
+      }
+    }
+  }
+
+  .pointers-image {
+    width: 2.1016vw;
+  }
+}
+
+
+/* --- About Us --- */
+
+.aboutUs-container {
+  height: 26.2037vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 1.7187vw;
+  gap: 1.3888vh;
+  background-color: rgba(224, 247, 250, 1);
+
+  .aboutUs-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: rgba(0, 124, 145, 1);
+  }
+
+  .aboutUs-text {
+    margin-left: 0.5208vw;
+    text-align: start;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: rgba(38, 50, 56, 1);
+  }
+}
+
+
+/* --- location --- */
+
+.locationInfo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 11.3541vw;
+  height: 50vh;
+  gap: 3.125vw;
+
+  .locationInfo-content {
+    display: flex;
+    flex-direction: column;
+    height: 26.6666vh;
+    width: 31.8229vw;
+    text-align: start;
+    gap: 4.6296vh;
+
+    .locationInfo-title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+
+      color: rgba(0, 124, 145, 1);
+    }
+
+    .locationInfo-text {
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      color: rgba(38, 50, 56, 1);
+
+      .locationInfo-strongText {
+        font-weight: 700;
+      }
+
+      .locationInfo-linkText {
+        color: rgba(10, 120, 175, 1);
+      }
+    }
+  }
+}
+
+
+/* --- reserve --- */
+
+.reservePlace-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16.2037vh;
+  padding: 0 1.8229vw;
+  background-color: rgba(224, 247, 250, 1);
+  
+  button {
+    background: white;
+    color: rgba(38, 50, 56, 1);
+    width: 20vw;
+    border: solid 3px rgba(10, 120, 175, 1);
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.08);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-left: 24px;
+  }
+
+  button:hover {
+    background: rgb(15, 138, 199);
+    color: white;
+    border: solid 4px white;
+    
+    transform: translateY(-2px) scale(1.03);
+  }
+}
+
+/* --- FAQ --- */
+
+.FAQ-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
+  padding: 6.4818vh 1.5625vw;
+  gap: 3.0392vh;
+
+  .FAQ-title {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color: rgba(0, 124, 145, 1);
+
+
+  }
+  
+  .FAQ-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3.5185vh;
+  }
+}
+
+/* --- Footer --- */
+
+.footer-container {
+  height: 21.2037vh;
+  background-color: rgba(217, 217, 217, 1);
+}
+
+/* ------------------------ */
+
+.error-container {
+  text-align: center;
+  padding: 40px;
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.error-container h3 {
+  color: #c33;
+  margin-bottom: 10px;
+}
+
+.error-container button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.error-container button:hover {
+  background: #2980b9;
+}
+
+/* ------------------------------------------- */
+
+/* .home-header {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -52,14 +341,14 @@
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #e1e1e1;
   transition: transform 0.2s ease;
 }
 
 .user-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .user-card h3 {
@@ -95,32 +384,4 @@
 
 .no-users button:hover {
   background: #218838;
-}
-
-.error-container {
-  text-align: center;
-  padding: 40px;
-  background: #fee;
-  border: 1px solid #fcc;
-  border-radius: 8px;
-  margin: 20px;
-}
-
-.error-container h3 {
-  color: #c33;
-  margin-bottom: 10px;
-}
-
-.error-container button {
-  background: #3498db;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.error-container button:hover {
-  background: #2980b9;
-}
+} */

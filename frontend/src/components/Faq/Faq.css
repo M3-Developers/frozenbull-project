@@ -1,0 +1,28 @@
+.FaqComponent-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 0.3125vw;
+    gap: 1.5686vh;
+
+  h4 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: rgba(0, 0, 0, 1);
+  }
+
+  p {
+    margin-left: 0.5208vw;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: rgba(38, 50, 56, 1);
+  }
+}

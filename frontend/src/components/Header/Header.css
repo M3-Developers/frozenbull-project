@@ -1,0 +1,39 @@
+.header-container {
+    display: flex;
+    width: 100%;
+    height: 7.4074vh;
+    background-color: rgba(224, 247, 250, 1);
+    justify-content: center;
+    
+    nav {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        gap: 2.1354vw;
+
+        a {
+            font-family: "Inter";
+            font-size: normal;
+            font-weight: 700;
+            font-size: 17px;
+
+            color: rgba(38, 50, 56, 1);
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: rgba(55, 69, 77, 1);
+        }
+    }
+
+    
+    img { 
+        height: 6.0185vh;
+        width: auto;
+
+        position: absolute;
+        top: 0.6481vh;
+        left: 4.4270vw;
+        z-index: 10;
+    }
+}
