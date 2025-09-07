@@ -1,0 +1,208 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  height: 35.7291vh;
+  width: 27.8126vw;
+  padding: 2.1296vh 3.125vw 7.6851vh 2.5vw;
+  background-color: rgba(254, 254, 254, 0.8);
+  border: solid 4px rgba(176, 190, 197, 1);
+  border-radius: 10px;
+  position: relative;
+
+  /* -- form header -- */
+  .loginForm-Header {
+    display: flex;
+
+    img {
+      height: 8.2407vh;
+      width: auto;
+    }
+    p {
+      font-family: 'Inknut Antiqua';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 62px;
+
+      color: rgba(38, 50, 56, 1);
+    }
+  }
+
+  /* -- form contaiener -- */
+  .loginForm-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3888vh;
+
+    h1 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 42px;
+      margin-bottom: 0.9259vh;
+
+      color: rgba(0, 0, 0, 1);
+    }
+
+    input {
+      width: 100%;
+      padding: 7px;
+      border: none;
+      border-bottom: solid 2px rgba(89, 118, 132, 1);
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    input:focus {
+      border: solid 1px rgba(0, 0, 0, 1);
+    }
+
+    .createAccountLink-container {
+      display: flex;
+      gap: 5px;
+
+      span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .createAccount-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: rgba(0, 124, 145, 1);
+      }
+
+      .createAccount-text:hover {
+        cursor: pointer;  
+        color: rgb(5, 151, 177);
+      }
+    }
+  }
+
+  /* -- form buttons container -- */
+  .loginForm-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 79px;
+    right: 20px;
+    gap: 1.4062vw;
+
+    button {
+      width: 140px;
+      height: 35px;
+    }
+
+    .prev-button {
+      border-radius: 8px;
+      border: solid 2px rgba(255, 255, 255, 1);
+      background-color: rgba(176, 190, 197, 1);
+      color: rgba(38, 50, 56, 1);
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .prev-button:hover {
+      animation: gray-transitionButtonColor 0.2s forwards;
+    }
+
+    .prev-button:not(:hover) {
+      animation: gray-reverseButtonColor 0.4s forwards;
+    }
+
+
+    .next-button {
+      border-radius: 8px;
+      border: solid 2px rgba(255, 255, 255, 1);
+      background-color: rgba(0, 124, 145, 1);
+      color: rgba(38, 50, 56, 1);
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .next-button:hover {
+      animation: green-transitionButtonColor 0.2s forwards;
+    }
+
+    .next-button:not(:hover) {
+      animation: green-reverseButtonColor 0.4s forwards;
+    }
+  }
+}
+
+
+
+/* -- key frames -- */
+
+@keyframes gray-transitionButtonColor {
+  from {
+    background-color: rgba(176, 190, 197, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(176, 190, 197, 1);
+  }
+}
+
+@keyframes gray-reverseButtonColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(176, 190, 197, 1);
+  }
+  to {
+    background-color: rgba(176, 190, 197, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+  }
+}
+
+
+@keyframes green-transitionButtonColor {
+  from {
+    background-color: rgba(0, 124, 145, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+    color:rgba(255, 255, 255, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(0, 124, 145, 1);
+  }
+}
+
+@keyframes green-reverseButtonColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(0, 124, 145, 1);
+  }
+  to {
+    background-color: rgba(0, 124, 145, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+    color:rgba(255, 255, 255, 1);
+  }
+}

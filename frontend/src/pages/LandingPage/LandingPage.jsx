@@ -1,20 +1,21 @@
 import React from 'react';
-import { useApiCall } from '../hooks/useApiCall';
-import { userService } from '../services/userService';
-import Loading from '../components/Loading/Loading';
-import Header from '../components/Header/Header';
-import ScrollingNumber from '../components/ScrollingNumber';
-import Carroussel from '../components/Carroussel/Carroussel';
-import Map from '../components/Map/Map';
+import { useApiCall } from '../../hooks/useApiCall';
+import { userService } from '../../services/userService';
+import Loading from '../../components/Loading/Loading';
+import Header from '../../components/Header/Header';
+import ScrollingNumber from '../../components/ScrollingNumber';
+import Carroussel from '../../components/Carroussel/Carroussel';
+import Map from '../../components/Map/Map';
+import { useNavigate } from 'react-router-dom';
 
-import './Home.css';
+import './LandingPage.css';
 
 import {
   FrozenBull_SecondLogo,
   Triangle_up,
   Triangle_down,
-} from '../assets/images';
-import Faq from '../components/Faq/Faq';
+} from '../../assets/images';
+import Faq from '../../components/Faq/Faq';
 
 const faqItem = [
   {
@@ -35,6 +36,7 @@ const faqItem = [
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
   const {
     data: apiResponse,
     loading,
@@ -60,7 +62,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <Header />
+      <Header returnPage="landingPage" showNavbar={true} />
       <Carroussel />
 
       <section className="slogan-container">
@@ -190,7 +192,7 @@ const Home = () => {
       <section className="reservePlace-container">
         <button
           onClick={() => {
-            alert('Action not Implemented');
+            navigate('/login');
           }}
         >
           Reserve seu lugar Aqui!!

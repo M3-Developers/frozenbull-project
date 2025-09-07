@@ -1,0 +1,372 @@
+.signUp-Title {
+  position: absolute;
+  left: 85px;
+  top: 11.2962vh;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+
+  color: rgba(0, 0, 0, 1);
+}
+
+.signUp-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUp-content {
+  display: flex;
+  gap: 7.0833vw;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    height: 54.2592vh;
+    min-height: 52.9629vh;
+    width: 27.8645vw;
+    border: solid rgba(176, 190, 197, 1) 3px;
+    border-radius: 10px;
+    padding: 6.4814vh 3.125vw 0 2.8645vw;
+
+    h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+
+      color: rgba(0, 0, 0, 1);
+    }
+
+    input[type='text'],
+    input[type='date'],
+    input[type='email'] {
+      width: 26.875vw;
+      padding: 7px;
+      border: none;
+      border-bottom: solid 2px rgba(89, 118, 132, 1);
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    input:hover {
+      border-bottom: solid 2px rgba(89, 118, 132, 1);
+    }
+  }
+
+  .userData-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.9629vh;
+
+    img {
+      height: 8.2407vh;
+      width: fit-content;
+    }
+
+    .createAccountLink-container {
+      display: flex;
+      gap: 5px;
+
+      span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .createAccount-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: rgba(0, 124, 145, 1);
+      }
+
+      .createAccount-text:hover {
+        cursor: pointer;
+        color: rgba(5, 151, 177, 1);
+      }
+    }
+  }
+}
+
+/*  */
+
+.userAdress-container {
+  position: relative;
+  gap: 25px;
+
+  .checkbox-Container {
+    display: flex;
+    gap: 7px;
+
+    input[type='checkbox'] {
+      border: solid 1px rgba(0, 0, 0, 1);
+      border-radius: 5px;
+      height: 25px;
+      width: 25px;
+      appearance: none;
+    }
+    input[type='checkbox']:checked {
+      animation: termOfService-contactCheckboxColor 0.1s forwards;
+    }
+    input[type='checkbox']:not(:checked) {
+      animation: termOfService-reverseContactCheckboxColor 0.2s forwards;
+    }
+
+    span {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  .button-container {
+    position: absolute;
+    right: 3.125vw;
+    bottom: 8.9814vh;
+    display: flex;
+    gap: 27px;
+
+    button {
+      border-radius: 8px;
+      height: 35px;
+      width: 140px;
+      cursor: pointer;
+
+      font-family: 'Roboto';
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .signUpPrev-button:hover {
+      animation: prev-contactButtonColor 0.2s forwards;
+    }
+
+    .signUpPrev-button:not(:hover) {
+      animation: prev-reverseContactButtonColor 0.4s forwards;
+    }
+
+    .signUpNext-button:hover {
+      animation: next-contactButtonColor 0.2s forwards;
+    }
+
+    .signUpNext-button:not(:hover) {
+      animation: next-reverseContactButtonColor 0.4s forwards;
+    }
+  }
+}
+
+/* --- */
+
+.passwordConfirmation-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 54.2592vh;
+  min-height: 52.9629vh;
+  width: 27.8645vw;
+  border: solid rgba(176, 190, 197, 1) 3px;
+  border-radius: 10px;
+  gap: 2.9629vh;
+  padding: 6.4814vh 3.125vw 0 2.8645vw;
+
+  h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .passwordInput-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.3148vh;
+
+    input[type='password'] {
+      width: 26.875vw;
+      padding: 7px;
+      border: none;
+      border-bottom: solid 2px rgba(89, 118, 132, 1);
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .passwordError_message {
+      color: red;
+    }
+  }
+
+  .passwordButton-container {
+    position: absolute;
+    right: 3.125vw;
+    bottom: 8.9814vh;
+
+    button {
+      border-radius: 8px;
+      height: 35px;
+      width: 140px;
+      cursor: pointer;
+
+      font-family: 'Roboto';
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .passwordPrev-button:hover {
+      animation: prev-passwordButtonColor 0.2s forwards;
+    }
+
+    .passwordPrev-button:not(:hover) {
+      animation: prev-reversePasswordButtonColor 0.4s forwards;
+    }
+
+    .passwordNext-button:hover {
+      animation: next-passwordButtonColor 0.2s forwards;
+    }
+
+    .passwordNext-button:not(:hover) {
+      animation: next-reversePasswordButtonColor 0.4s forwards;
+    }
+  }
+}
+
+/* ----- Keyframes | animações ----- */
+
+@keyframes termOfService-contactCheckboxColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  to {
+    background: url('../../assets/images/check.svg');
+    background-color: rgba(197, 168, 128, 1);
+  }
+}
+
+@keyframes termOfService-reverseContactCheckboxColor {
+  from {
+    background: url('../../assets/images/check.svg');
+    background-color: rgba(197, 168, 128, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes prev-contactButtonColor {
+  from {
+    background-color: rgba(176, 190, 197, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(176, 190, 197, 1);
+  }
+}
+
+@keyframes prev-reverseContactButtonColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(176, 190, 197, 1);
+  }
+  to {
+    background-color: rgba(176, 190, 197, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes next-contactButtonColor {
+  from {
+    background-color: rgba(0, 124, 145, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(0, 124, 145, 1);
+  }
+}
+
+@keyframes next-reverseContactButtonColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(0, 124, 145, 1);
+  }
+  to {
+    background-color: rgba(0, 124, 145, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes prev-passwordButtonColor {
+  from {
+    background-color: rgba(176, 190, 197, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(176, 190, 197, 1);
+  }
+}
+
+@keyframes prev-reversePasswordButtonColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(176, 190, 197, 1);
+  }
+  to {
+    background-color: rgba(176, 190, 197, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes next-passwordButtonColor {
+  from {
+    background-color: rgba(0, 124, 145, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(0, 124, 145, 1);
+  }
+}
+
+@keyframes next-reversePasswordButtonColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(0, 124, 145, 1);
+  }
+  to {
+    background-color: rgba(0, 124, 145, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}

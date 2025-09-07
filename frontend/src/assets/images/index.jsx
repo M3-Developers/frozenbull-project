@@ -24,6 +24,7 @@ import red_n6 from './red_n6.svg';
 import red_n7 from './red_n7.svg';
 import red_n8 from './red_n8.svg';
 import red_n9 from './red_n9.svg';
+import check from './check.svg'
 
 export { 
     FrozenBull_Logo,
@@ -52,5 +53,6 @@ export {
     red_n7,
     red_n8,
     red_n9,
-    
+    check,
+           
  };
