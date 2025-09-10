@@ -34,7 +34,7 @@
     }
   }
 
-  img {
+  .frozenBull-logo {
     height: 6.0185vh;
     width: auto;
 
@@ -43,10 +43,50 @@
     left: 4.427vw;
     z-index: 10;
   }
+
+  .userImage {
+    height: 6.0185vh;
+    width: auto;
+
+    position: absolute;
+    top: 0.6481vh;
+    right: 4.427vw;
+    z-index: 10;
+  }
+
+  .userMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(176, 190, 197, 1);
+    position: absolute;
+    height: fit-content;
+    width: 10vw;
+
+    top: 7.4074vh;
+    right: 4.427vw;
+    z-index: 10;
+    padding: 0.5vh 1vw;
+
+    a {
+      text-decoration: none;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.1rem;
+      line-height: 13px;
+      color: rgba(38, 50, 56, 1);
+      padding: 19px 6px 17px 6px;
+    }
+
+    .userAnchor_border {
+      border-bottom: solid 3px rgba(255,255,255,1);
+    }
+  }
 }
 
 .dinamicHeader {
   position: absolute;
+
   top: 0;
   left: 0;
 }

@@ -184,12 +184,11 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  height: 54.2592vh;
-  min-height: 52.9629vh;
+  height: 42.1296vh;
   width: 27.8645vw;
-  border: solid rgba(176, 190, 197, 1) 3px;
+  border: solid rgba(176, 190, 197, 1) 4px;
   border-radius: 10px;
-  gap: 2.9629vh;
+  gap: 4.9074vh;
   padding: 6.4814vh 3.125vw 0 2.8645vw;
 
   h2 {
@@ -228,7 +227,7 @@
   .passwordButton-container {
     position: absolute;
     right: 3.125vw;
-    bottom: 8.9814vh;
+    bottom: 5.5555vh;
 
     button {
       border-radius: 8px;

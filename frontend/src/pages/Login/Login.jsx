@@ -63,7 +63,10 @@ const Login = () => {
   return (
     <main className="login-container">
       <Header returnPage={'landingPage'} state={'dinamic'} />
-      <form action="post" className="login-content">
+      <form action="post" className="login-content" onsubmit={() => {
+        // Validade password and email
+        // send this data to the next page via url
+      }}>
         <section className="loginForm-Header">
           <img src={FrozenBull_Icon} alt="FrozenBull_Icon" />
           <p>FrozenBull</p>

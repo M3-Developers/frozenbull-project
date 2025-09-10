@@ -1,0 +1,169 @@
+.reserve-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  aside {
+    justify-items: flex-start;
+    flex-wrap: wrap;
+
+    min-height: 27.6852vh;
+    min-width: 27.6042vw;
+    max-width: 27.6042vw;
+
+    border: solid 4px rgba(176, 190, 197, 1);
+    border-radius: 10px;
+
+    h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  .reserve-content {
+    display: flex;
+    gap: 8.8541vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.reserveTable-container {
+  max-height: 27.6852vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding: 5.5555vh 2.7083vw 0 3.2812vw;
+  gap: 25px;
+
+  select {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: solid 2px rgba(89, 118, 132, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .reserveButton-container {
+    display: flex;
+    position: absolute;
+    right: 2.7083vw;
+    bottom: 5.5555vh;
+    gap: 1.4062vw;
+
+    button {
+      width: 140px;
+      height: 35px;
+      border-radius: 8px;
+    }
+
+    .reservePrev-button:hover {
+      animation: gray-revReserveColor 0.2s forwards;
+    }
+
+    .reservePrev-button:not(:hover) {
+      animation: gray-ReserveColor 0.4s forwards;
+    }
+
+    .reserveNext-button:hover {
+      animation: green-revReserveColor 0.2s forwards;
+    }
+    .reserveNext-button:not(:hover) {
+      animation: green-ReserveColor 0.4s forwards;
+    }
+  }
+}
+
+.reserveSits-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.3148vh;
+  padding: 5.5555vh 3.125vw 6.8518vh 3.125vw;
+
+  .reserveChairs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3148vh;
+    width: 100%;
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 7px;
+      border: none;
+      border-bottom: solid 2px rgba(89, 118, 132, 1);
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+@keyframes green-ReserveColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(0, 124, 145, 1);
+  }
+  to {
+    background-color: rgba(0, 124, 145, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes green-revReserveColor {
+  from {
+    background-color: rgba(0, 124, 145, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(0, 124, 145, 1);
+  }
+}
+
+@keyframes gray-ReserveColor {
+  from {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(176, 190, 197, 1);
+  }
+  to {
+    background-color: rgba(176, 190, 197, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes gray-revReserveColor {
+  from {
+    background-color: rgba(176, 190, 197, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(176, 190, 197, 1);
+  }
+}

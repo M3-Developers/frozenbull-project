@@ -140,7 +140,7 @@ const SignUp = () => {
       <Header returnPage={'landingPage'} showNavbar={false} state={'dinamic'} />
       <h1 className="signUp-Title">Cadastro</h1>
 
-      {signUp_state !== 'collectData' && !userDataCompleted ? (
+      {signUp_state === 'collectData' && !userDataCompleted ? (
         //userData container
 
         <section className="signUp-content">
@@ -262,6 +262,7 @@ const SignUp = () => {
             <input
               type="password"
               name="password"
+              placeholder="Senha"
               onChange={e => {
                 setPassword_value(e.target.value);
               }}
@@ -269,6 +270,7 @@ const SignUp = () => {
             <input
               type="password"
               name="confirmPassword"
+              placeholder="Confirmar Senha"
               onChange={e => {
                 setConfirmPassword_value(e.target.value);
               }}

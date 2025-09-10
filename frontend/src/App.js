@@ -4,7 +4,7 @@ import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 import Home from './pages/LandingPage/LandingPage';
 import Login from './pages/Login/Login';
 import SignUp from './pages/SignUp/SignUp';
-// import Reserve from './pages/Reservation/Reservation';
+import Reserve from './pages/Reserve/Reserve';
 import './App.css';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Login" element={<Login/>}/>
             <Route path="/SignUp" element={<SignUp/>}/>
-            {/* <Route path="/reserve" element={<Reserve/>}/> */}
+            <Route path="/reserve" element={<Reserve/>}/>
           </Routes>
         </div>
       </Router>
